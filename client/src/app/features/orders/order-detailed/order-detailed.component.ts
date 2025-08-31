@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { OrderService } from '../../../core/services/order.service';
-import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Order } from '../../../shared/models/order';
 import { MatCardModule } from '@angular/material/card';
 import { MatButton } from '@angular/material/button';
@@ -19,7 +19,6 @@ import { AdminService } from '../../../core/services/admin.service';
         CurrencyPipe,
         AddressPipe,
         PaymentCardPipe,
-        RouterLink
     ],
     templateUrl: './order-detailed.component.html',
     styleUrl: './order-detailed.component.scss'

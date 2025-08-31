@@ -16,20 +16,18 @@ import { DialogService } from '../../core/services/dialog.service';
 @Component({
     selector: 'app-admin',
     imports: [
-        MatTableModule,
-        MatPaginatorModule,
-        MatButton,
-        MatIcon,
-        MatSelectModule,
-        DatePipe,
-        CurrencyPipe,
-        MatLabel,
-        MatTooltipModule,
-        MatTabsModule,
-        ɵEmptyOutletComponent,
-        MatIconButton,
-        RouterLink
-    ],
+    MatTableModule,
+    MatPaginatorModule,
+    MatIcon,
+    MatSelectModule,
+    DatePipe,
+    CurrencyPipe,
+    MatLabel,
+    MatTooltipModule,
+    MatTabsModule,
+    MatIconButton,
+    RouterLink
+],
     templateUrl: './admin.component.html',
     styleUrl: './admin.component.scss'
 })

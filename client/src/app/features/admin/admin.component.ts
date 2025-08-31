@@ -14,25 +14,24 @@ import { RouterLink, ɵEmptyOutletComponent } from "@angular/router";
 import { DialogService } from '../../core/services/dialog.service';
 
 @Component({
-  selector: 'app-admin',
-  standalone: true,
-  imports: [
-    MatTableModule,
-    MatPaginatorModule,
-    MatButton,
-    MatIcon,
-    MatSelectModule,
-    DatePipe,
-    CurrencyPipe,
-    MatLabel,
-    MatTooltipModule,
-    MatTabsModule,
-    ɵEmptyOutletComponent,
-    MatIconButton,
-    RouterLink
-],
-  templateUrl: './admin.component.html',
-  styleUrl: './admin.component.scss'
+    selector: 'app-admin',
+    imports: [
+        MatTableModule,
+        MatPaginatorModule,
+        MatButton,
+        MatIcon,
+        MatSelectModule,
+        DatePipe,
+        CurrencyPipe,
+        MatLabel,
+        MatTooltipModule,
+        MatTabsModule,
+        ɵEmptyOutletComponent,
+        MatIconButton,
+        RouterLink
+    ],
+    templateUrl: './admin.component.html',
+    styleUrl: './admin.component.scss'
 })
 export class AdminComponent implements OnInit{
   displayedColumns: string[] = ['id', 'buyerEmail', 'orderDate', 'total', 'status', 'action'];

@@ -9,19 +9,18 @@ import { PaymentCardPipe } from '../../../shared/pipes/payment-card.pipe';
 import { OrderService } from '../../../core/services/order.service';
 
 @Component({
-  selector: 'app-checkout-success',
-  standalone: true,
-  imports: [
-    MatButton,
-    RouterLink,
-    MatProgressSpinnerModule,
-    DatePipe,
-    AddressPipe,
-    CurrencyPipe,
-    PaymentCardPipe
-  ],
-  templateUrl: './checkout-success.component.html',
-  styleUrl: './checkout-success.component.scss'
+    selector: 'app-checkout-success',
+    imports: [
+        MatButton,
+        RouterLink,
+        MatProgressSpinnerModule,
+        DatePipe,
+        AddressPipe,
+        CurrencyPipe,
+        PaymentCardPipe
+    ],
+    templateUrl: './checkout-success.component.html',
+    styleUrl: './checkout-success.component.scss'
 })
 export class CheckoutSuccessComponent implements OnDestroy {
   signalrService = inject(SignalrService);

@@ -21,22 +21,21 @@ import { OrderToCreate, ShippingAddress } from '../../shared/models/order';
 import { OrderService } from '../../core/services/order.service';
 
 @Component({
-  selector: 'app-checkout',
-  standalone: true,
-  imports: [
-    OrderSummaryComponent,
-    MatStepperModule,
-    MatButton,
-    RouterLink,
-    MatCheckboxModule,
-    CheckoutDeliveryComponent,
-    CheckoutReviewComponent,
-    CurrencyPipe,
-    JsonPipe,
-    MatProgressSpinnerModule
-  ],
-  templateUrl: './checkout.component.html',
-  styleUrl: './checkout.component.scss'
+    selector: 'app-checkout',
+    imports: [
+        OrderSummaryComponent,
+        MatStepperModule,
+        MatButton,
+        RouterLink,
+        MatCheckboxModule,
+        CheckoutDeliveryComponent,
+        CheckoutReviewComponent,
+        CurrencyPipe,
+        JsonPipe,
+        MatProgressSpinnerModule
+    ],
+    templateUrl: './checkout.component.html',
+    styleUrl: './checkout.component.scss'
 })
 export class CheckoutComponent implements OnInit, OnDestroy {
   private stripeService = inject(StripeService);

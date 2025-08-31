@@ -5,15 +5,14 @@ import { RouterLink } from '@angular/router';
 import { BusyService } from '../../../core/services/busy.service';
 
 @Component({
-  selector: 'app-empty-state',
-  standalone: true,
-  imports: [
-    MatIcon,
-    MatButton,
-    RouterLink
-  ],
-  templateUrl: './empty-state.component.html',
-  styleUrl: './empty-state.component.scss'
+    selector: 'app-empty-state',
+    imports: [
+        MatIcon,
+        MatButton,
+        RouterLink
+    ],
+    templateUrl: './empty-state.component.html',
+    styleUrl: './empty-state.component.scss'
 })
 export class EmptyStateComponent {
   busyService = inject(BusyService);

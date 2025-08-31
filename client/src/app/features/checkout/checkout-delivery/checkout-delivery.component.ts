@@ -7,14 +7,13 @@ import { DeliveryMethod } from '../../../shared/models/deliveryMethods';
 import { firstValueFrom } from 'rxjs';
 
 @Component({
-  selector: 'app-checkout-delivery',
-  standalone: true,
-  imports: [
-    MatRadioModule,
-    CurrencyPipe
-  ],
-  templateUrl: './checkout-delivery.component.html',
-  styleUrl: './checkout-delivery.component.scss'
+    selector: 'app-checkout-delivery',
+    imports: [
+        MatRadioModule,
+        CurrencyPipe
+    ],
+    templateUrl: './checkout-delivery.component.html',
+    styleUrl: './checkout-delivery.component.scss'
 })
 export class CheckoutDeliveryComponent implements OnInit {
   checkoutService = inject(CheckoutService);

@@ -8,17 +8,16 @@
 
   @Component({
     selector: 'app-filters-dialog',
-    standalone: true,
     imports: [
-      MatDivider,
-      MatSelectionList,
-      MatListOption,
-      MatButton,
-      FormsModule
+        MatDivider,
+        MatSelectionList,
+        MatListOption,
+        MatButton,
+        FormsModule
     ],
     templateUrl: './filters-dialog.component.html',
     styleUrl: './filters-dialog.component.scss'
-  })
+})
   export class FiltersDialogComponent {
     shopService = inject(ShopService);
     private dialogRef = inject(MatDialogRef<FiltersDialogComponent>)

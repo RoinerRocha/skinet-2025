@@ -12,23 +12,22 @@ import { MatDivider } from '@angular/material/divider';
 import { IsAdminDirective } from "../../shared/directives/is-admin.directive";
 
 @Component({
-  selector: 'app-header',
-  standalone: true,
-  imports: [
-    MatIcon,
-    MatButton,
-    MatBadge,
-    RouterLink,
-    RouterLinkActive,
-    MatProgressBar,
-    MatMenuTrigger,
-    MatMenu,
-    MatDivider,
-    MatMenuItem,
-    IsAdminDirective
-],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+    selector: 'app-header',
+    imports: [
+        MatIcon,
+        MatButton,
+        MatBadge,
+        RouterLink,
+        RouterLinkActive,
+        MatProgressBar,
+        MatMenuTrigger,
+        MatMenu,
+        MatDivider,
+        MatMenuItem,
+        IsAdminDirective
+    ],
+    templateUrl: './header.component.html',
+    styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
   busyService = inject(BusyService);

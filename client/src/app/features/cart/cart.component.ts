@@ -6,11 +6,10 @@ import { EmptyStateComponent } from "../../shared/components/empty-state/empty-s
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-cart',
-  standalone: true,
-  imports: [CartItemComponent, OrderSummaryComponent, EmptyStateComponent],
-  templateUrl: './cart.component.html',
-  styleUrl: './cart.component.scss'
+    selector: 'app-cart',
+    imports: [CartItemComponent, OrderSummaryComponent, EmptyStateComponent],
+    templateUrl: './cart.component.html',
+    styleUrl: './cart.component.scss'
 })
 export class CartComponent {
   private router = inject(Router)

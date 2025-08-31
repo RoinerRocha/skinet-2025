@@ -11,19 +11,18 @@ import { AccountService } from '../../../core/services/account.service';
 import { AdminService } from '../../../core/services/admin.service';
 
 @Component({
-  selector: 'app-order-detailed',
-  standalone: true,
-  imports: [
-    MatCardModule,
-    MatButton,
-    DatePipe,
-    CurrencyPipe,
-    AddressPipe,
-    PaymentCardPipe,
-    RouterLink
-],
-  templateUrl: './order-detailed.component.html',
-  styleUrl: './order-detailed.component.scss'
+    selector: 'app-order-detailed',
+    imports: [
+        MatCardModule,
+        MatButton,
+        DatePipe,
+        CurrencyPipe,
+        AddressPipe,
+        PaymentCardPipe,
+        RouterLink
+    ],
+    templateUrl: './order-detailed.component.html',
+    styleUrl: './order-detailed.component.scss'
 })
 export class OrderDetailedComponent implements OnInit {
    private orderService = inject(OrderService);
